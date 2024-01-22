@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Add this line in the head section of your HTML to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        height: 100%;
+        /* Full height */
+        background: url(media/bgmain.avif) no-repeat center center fixed;
+        /* Set the background image */
+        background-size: cover;
+        /* Ensure the image covers the whole screen */
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.5);
+        /* Light background for visibility */
+        color: whitesmoke;
+        /* Black color for visibility */
+        position: fixed;
+        /* Make the header stay at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        /* Ensure header is above other content */
+      }
+
+      .logo {
+        font-size: 1.5em;
+        /* Adjusted font size for better visibility */
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        /* Reduced gap for a more compact nav bar */
+        margin-right: 1rem;
+      }
+
+      .nav-links a {
+        color: whitesmoke;
+        /* Black color for visibility */
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        /* Added padding for clickable area */
+        border-radius: 20px;
+        /* Rounded corners for the links */
+        transition: background-color 0.3s;
+        /* Smooth background transition */
+      }
+
+      .nav-links a:hover {
+        background-color: rgba(158, 155, 155, 0.2);
+        /* Hover effect for nav links */
+      }
+
+      .search-icon {
+        font-size: 1.5em;
+        cursor: pointer;
+        padding-right: 0%;
+        color: whitesmoke;
+        /* Black color for visibility */
+      }
+
+      .menu-toggle {
+        /* Hide menu toggle by default */
+        font-size: 2em;
+        cursor: pointer;
+        color: whitesmoke;
+        padding-right: 10%;
+      }
+
+      .main-banner {
+        position: relative;
+        color: white;
+        padding-left: 2.5%;
+        padding-top: 1%;
+        background: url(media/bgmain.avif) no-repeat center center/cover;
+        height: 100vh;
+        background-size: cover;
+      }
+
+      .main-banner h1 {
+        font-size: 3rem;
+        padding-top: 15%;
+      }
+
+      .main-banner button {
+        padding: 1rem 2rem;
+        border: none;
+        background: white;
+        color: #000;
+        cursor: pointer;
+        margin-top: 2rem;
+        text-transform: uppercase;
+      }
+
+      .main-banner button:hover {
+        background: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Infosys®</div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Navigate your next</a>
+          </li>
+          <li>
+            <a href="#">Infosys Knowledge Institute</a>
+          </li>
+          <li>
+            <a href="#">Investors</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="main-banner">
+      <h1>Champions Evolve.</h1>
+      <h4>DIGITAL-FIRST | CLOUD-FIRST | AI-FIRST</h4>
+      <button>Know More</button>
+    </div>
+  </body>
+</html>
